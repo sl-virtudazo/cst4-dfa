@@ -14,7 +14,7 @@ public class DFA_String_Acceptance_Checker {
             String input = scan.nextLine();
 
             if (input.equalsIgnoreCase("Done")) {
-                break;
+                System.exit(0);
             }
 
             if (accepted(input)) {
@@ -23,7 +23,6 @@ public class DFA_String_Acceptance_Checker {
                 System.out.println("Output: Rejected");
             }
         }
-        scan.close();
     }
 
     public static boolean accepted(String s) {
